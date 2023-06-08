@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <title>Café Choco-Latte</title>
+    <meta charset="UTF-8" />
+    <link href="../css/style.css" rel="stylesheet" /> <!--Länka till stylesheet-->
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Café Choco-Latte</h1>
+            <h2>Fantastiskt kaffe & läckra bakverk</h2>
+            <p>Vi vill vara en kaffeoas där du känner de intensiva dofterna från kaffet när du kliver in genom dörren.
+                Vi är en plats där du för varje kopp kaffe och bakverk ska uppleva en sann njutning och smaksensation.
+                Vi vill ge dig hög kvalitet utan att tumma på rättvisan gentemot kaffe- och kakoodlarna.
+            </p>
+        </header>
+
+        <!--Meny navigering-->
+        <nav>
+            <ul>
+                <li><a href="../index.html">Hem</a></li>
+                <li><a href="chokladProvning.html">Chokladprovning</a>
+                    <ul>
+                        <li><a href="bokning.html">Boka chokladprovning</a></li>
+                    </ul>
+                </li>
+                <li><a href="omKakaoTrädet.html">Om kakaoträdet</a></li>
+            </ul>
+        </nav>
+        <hr>
+
+        <main>
+            <section> <!--Bokningssektion-->
+                <header> <!--Huvudtitel-->
+                    <h2>Boka chokladprovning</h2>
+                </header>
+
+                <form action="#" method="post"> <!--Info går ingenstans i nuläget-->
+                    <fieldset name="datum">
+                        <legend>Välj datum:</legend>
+                        <p>
+                            <input type="radio" id="April_30" name="datum" value="30 april">
+                            <label for="April_30">30 april</label>
+                        </p>
+                        <p>
+                            <input type="radio" id="Maj_2" name="datum" value="2 maj">
+                            <label for="Maj_2">2 maj</label>
+                        </p>
+                        <p>
+                            <input type="radio" id="Maj_7" name="datum" value="7 maj">
+                            <label for="Maj_7">7 maj</label>
+                        </p>
+                        <p>
+                            <input type="radio" id="Maj_9" name="datum" value="9 maj">
+                            <label for="Maj_9">9 maj</label>
+                        </p>
+                        <p>
+                            <input type="radio" id="Maj_14" name="datum" value="14 maj">
+                            <label for="Maj_14">14 maj</label>
+                        </p>
+                        <p>
+                            <input type="radio" id="Maj_16" name="datum" value="16 maj">
+                            <label for="Maj_16">16 maj</label>
+                        </p>
+                    </fieldset>
+
+                    <fieldset name="antal">
+                        <legend>Välj antal personer:</legend>
+                        <label for="Antal"></label>
+                        <select name="antal" id="Antal">
+                            <option value="one">1</option>
+                            <option value="two">2</option>
+                            <option value="three">3</option>
+                            <option value="four">4</option>
+                            <option value="five">5</option>
+                            <option value="six">6</option>
+                            <option value="seven">7</option>
+                            <option value="eight">8</option>
+                            <option value="nine">9</option>
+                            <option value="ten">10</option>
+                            <option value="eleven">11</option>
+                            <option value="twelve">12</option>
+                        </select>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Fyll i dina uppgifter</legend>
+                        <p>
+                            <label for="Namn">Namn:*</label><br>
+                            <input type="text" name="namn" id="Namn" required> <!--Viktigt att ha med namn på bokning-->
+                        </p>
+                        <p>
+                            <label for="Email">Email:*</label><br>
+                            <input type="email" name="email" id="Email" required pattern="\w+@\w+.+\w"> <!--Viktigt att ha med email också-->
+                        </p>
+                        <p>
+                            <label for="Tel">Mobilnummer:</label><br>
+                            <input type="tel" name="tel" id="Tel" pattern="[0-9]{10}"> <!--Svenskt format-->
+                        </p>
+                        <p>
+                            <label for="Meddelande">Meddelande:</label><br>
+                            <textarea name="meddelande" cols="30" rows="5" id="Meddelande"></textarea>
+                        </p>
+                    </fieldset>
+                    <p>
+                        <input type="submit" value="Boka">
+                    </p>
+                </form>
+            </section>
+
+        </main>
+
+
+    </div> <!--end wrapper-->
+
+    <footer> <!--Footer-->
+        <p>
+            &copy; Copyright 2022 | Café Choco-Latte
+        </p>
+    </footer>
+
+</body>
+
+</html>
